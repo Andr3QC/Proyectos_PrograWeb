@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* 1. Banner Superior_ Correspondiente al título principal con los colores*/
+.top-banner {
+    background-color: #ffd100;
+    text-align: center;
+    padding: 8px 0;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* 2. Cabecera con conexión al header del html */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #ffffff;
+}
+
+.search-container {
+    flex-grow: 1;
+    margin: 0 40px;
+}
+
+/*APLICACIÓN DE BORDER-RADIUS*/
+.search-box {
+    width: 100%;
+    padding: 12px 20px;
+    border: 1px solid #cccccc;
+    border-radius: 25px; 
+    outline: none;
+    font-size: 14px;
+}
+
+/* 3. Menú Gris */
+.grey-menu {
+    background-color: #f2f2f2;
+    padding: 8px 50px;
+}
+
+.grey-menu ul {
+    list-style: none; 
+    display: flex;
+    justify-content: flex-end; 
+    gap: 20px;
+    font-size: 12px;
+    color: #555;
+}
+
+/* 4. Menú Verde */
+.green-menu {
+    background-color: #00963f; 
+    padding: 15px 50px;
+}
+
+.green-menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* 5. Zona del Banner Principal */
+.hero-banner img {
+    width: 100%; /* Hace que la imagen ocupe todo el ancho de la pantalla */
+    height: auto;
+    display: block;
+}
+
+/* 6. Mes del Bebé */
+.baby-month {
+    padding: 40px 50px;
+    background-color: #f9f9f9;
+}
+
+.baby-month h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; 
+}
+
+.product-card {
+    flex: 1; 
+    background-color: #fff;
+    border: 1px solid #eaeaea;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+/* Cajas grises de simulación de imágenes de productos */
+.img-placeholder {
+    background-color: #eee;
+    height: 150px;
+    line-height: 150px; 
+    margin-bottom: 15px;
+    color: #999;
+}
