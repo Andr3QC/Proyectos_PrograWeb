@@ -1,0 +1,81 @@
+:root {
+    --color-fondo-header: #2c3e50;
+    --color-texto: #333333;
+    --tamano-fuente: 18px;
+    --espacioado-basico: 1.5rem;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: var(--tamano-fuente);
+    color: var(--color-texto);
+    font-family: sans-serif;
+}
+
+header h1 {
+    color: white;
+}
+
+header {
+    background-color: var(--color-fondo-header);
+    padding: var(--espaciado-basico);
+}
+
+nav {
+    display: flex;
+    gap: 20px; /* Separación entre los enlaces */
+    justify-content: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none; /* Quita el subrayado de los links */
+    font-weight: bold;
+}
+
+main {
+    max-width: 800px;
+    margin: 40px auto; 
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse; /* Une los bordes dobles */
+    margin-bottom: var(--espaciado-basico);
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    outline: none; /* Quita el borde azul por defecto del navegador */
+}
+
+input:focus {
+    border-color: #3498db;
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column; /* Apila los enlaces de arriba hacia abajo */
+        align-items: center;
+    }
+
+    main {
+        padding: 0 20px; /* Agrega espacio a los lados para que el texto no toque el borde del celular */
+    }
+}
+
